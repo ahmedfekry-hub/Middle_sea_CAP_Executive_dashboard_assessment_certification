@@ -58,22 +58,16 @@ st.markdown(
         font-weight: 800;
         margin: 0 0 6px 0;
     }}
-    .shell-sub {{
-        font-size: 15px;
-        opacity: 0.96;
-        margin-bottom: 10px;
-    }}
     .shell-meta {{
-        font-size: 14px;
-        background: rgba(255,255,255,0.12);
+        font-size: 16px;
+        font-weight: 800;
+        background: linear-gradient(90deg, #ffffff, #c7e0ff);
+        color: #0f172a;
         display: inline-block;
-        padding: 8px 12px;
+        padding: 10px 16px;
         border-radius: 999px;
-        margin-top: 4px;
-    }}
-    .stDownloadButton button {{
-        border-radius: 12px !important;
-        font-weight: 700 !important;
+        margin-top: 8px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
     }}
     @media (max-width: 768px) {{
         .shell-grid {{
@@ -96,9 +90,6 @@ st.markdown(
             </div>
             <div>
                 <div class="shell-title">Middle Sea CAP Assessment & Certification Dashboard</div>
-                <div class="shell-sub">
-                    Streamlit shell for the executive HTML dashboard with cleaner presentation for review, GitHub upload, and Streamlit Cloud deployment.
-                </div>
                 <div class="shell-meta">Prepared by Eng/Ahmed Fekry (Quality & Performance Director)</div>
             </div>
         </div>
@@ -106,17 +97,5 @@ st.markdown(
     ''',
     unsafe_allow_html=True,
 )
-
-col1, col2 = st.columns([1, 5])
-with col1:
-    st.download_button(
-        label="Download HTML",
-        data=html_content,
-        file_name="middle_sea_cap_executive_dashboard_v9_assessment_certification.html",
-        mime="text/html",
-        use_container_width=True,
-    )
-with col2:
-    st.caption("The dashboard below is embedded directly from the packaged HTML artifact.")
 
 components.html(html_content, height=7200, scrolling=True)
