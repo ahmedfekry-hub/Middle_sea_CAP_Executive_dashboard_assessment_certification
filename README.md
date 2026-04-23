@@ -1,14 +1,22 @@
-# Middle Sea CAP Dashboard - Streamlit Package
+# Middle Sea CAP Dashboard - Streamlit Package (Option 1.1)
 
-## Files
-- `app.py` → Streamlit entry point
-- `middle_sea_cap_executive_dashboard_v9_assessment_certification.html` → your dashboard
-- `requirements.txt` → Python dependencies
+## Included files
+- `app.py` → cleaner Streamlit shell
+- `middle_sea_cap_executive_dashboard_v9_assessment_certification.html` → main dashboard
+- `middle_sea_logo.jpg` → company logo
+- `requirements.txt` → dependency list
 
-## Deploy on Streamlit Community Cloud
-1. Create a new GitHub repository
-2. Upload all files from this folder
-3. Go to Streamlit Community Cloud
-4. Choose the repository and branch
-5. Set the main file path to `app.py`
-6. Click Deploy
+## Features
+- Cleaner Streamlit header shell
+- Embedded company logo
+- Prepared by line:
+  - Eng/Ahmed Fekry (Quality & Performance Director)
+- Download button for the HTML file
+- Ready for GitHub + Streamlit Community Cloud
+
+## Deploy
+1. Upload all files in this folder to GitHub
+2. Open Streamlit Community Cloud
+3. Select your repo and branch
+4. Set main file path to `app.py`
+5. Deploy
